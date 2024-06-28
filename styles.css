@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #373A40;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #FF7F3E;
+    text-align: center;
+    padding: 15px;
+    font-size: 2rem;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    list-style-type: none;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 8px;
+    background: #C5C5C5;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.timeline-event {
+    margin: 20px 0;
+    position: relative;
+    width: 50%;
+    padding: 10px 40px;
+    box-sizing: border-box;
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: all 1s ease-out; 
+}
+
+.timeline-event:nth-child(odd) {
+    left: 0;
+}
+
+.timeline-event:nth-child(even) {
+    left: 50%;
+}
+
+.timeline-event::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: -7px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #F76C6C;
+    border: 5px solid #FFF;
+}
+
+.timeline-event:nth-child(even)::before {
+    left: -7px;
+}
+
+.timeline-date {
+    font-size: 0.9em;
+    color: #888;
+}
+
+.timeline-content {
+    padding:  0px;
+    background: #FFF;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.timeline-content h3{
+    background-color: red;
+    padding: 10px 20px;
+}
+.timeline-content p{
+    padding: 10px 20px;
+}
+
+/* Fade-in animation */
+.timeline-event.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.timeline-content .a{
+    background-color: #FF4191;
+}
+.timeline-content .b{
+    background-color: #F4CE14;
+}
+.timeline-content .c{
+    background-color: #973131;
+}
+.timeline-content .d{
+    background-color: #3DC2EC;
+}
+.timeline-content .e{
+    background-color: #FF7F3E;
+}
+.timeline-content .f{
+    background-color: #059212;
+}
+.timeline-content .g{
+    background-color: #C80036;
+}
+.timeline-content .h{
+    background-color: #FF8F00;
+}
+.timeline-content .i{
+    background-color: #FF0000;
+}
+.timeline-content .j{
+    background-color: #5F0F40;
+}
+.timeline-content .k{
+    background-color: #7F27FF;
+}
+.timeline-content .l{
+    background-color: #12372A;
+}
+.timeline-date{
+    color: white;
+}
